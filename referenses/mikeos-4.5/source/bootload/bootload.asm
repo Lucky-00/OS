@@ -1,4 +1,4 @@
-; ==================================================================
+==================================================================
 ; The Mike Operating System bootloader
 ; Copyright (C) 2006 - 2014 MikeOS Developers -- see doc/LICENSE.TXT
 ;
@@ -344,7 +344,7 @@ l2hts:			; Calculate head, track and sector settings for int 13h
 
 
 ; ------------------------------------------------------------------
-; END OF BOOT SECTOR AND BUFFER START
+; END OF BOOT SECTOR AND BUFFER START 
 
 	times 510-($-$$) db 0	; Pad remainder of boot sector with zeros
 	dw 0AA55h		; Boot signature (DO NOT CHANGE!)
